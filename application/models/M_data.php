@@ -10,6 +10,13 @@ class M_data extends CI_Model
     }
 
     // fungsi untuk mengedit data
+    function get_data($table)
+    {
+        return $this->db->get($table);
+    }
+
+
+    // fungsi untuk mengedit data
     function get_where($where, $table)
     {
         return $this->db->get_where($table, $where);
